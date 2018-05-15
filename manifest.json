@@ -1,0 +1,26 @@
+{
+  "description": "This extension adds more browser shortcuts.",
+  "manifest_version": 1.0,
+  "name": "HotBkeys",
+  "version": "0.1",
+  "homepage_url": "https://github.com/Otteri/hotbkeys",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*", "*://*.bing.com/*"],
+      "js": ["search_engine.js"]
+    },
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["select_field.js"]
+    },
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["youtube.js"]
+    }
+  ]
+
+}
