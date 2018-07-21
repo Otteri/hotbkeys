@@ -1,11 +1,11 @@
 {
   "description": "This extension adds more browser shortcuts.",
-  "manifest_version": 1.0,
-  "name": "HotBkeys",
+  "manifest_version": 2,
+  "name": "Hotbkeys",
   "version": "0.1",
   "homepage_url": "https://github.com/Otteri/hotbkeys",
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/hotkey-48.png"
   },
 
   "content_scripts": [
