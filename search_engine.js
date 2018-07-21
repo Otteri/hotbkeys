@@ -10,7 +10,7 @@ document.addEventListener('keydown', function(event) {
   // Check if the pressed key is a number.
   // If it is, then open the corresponding link if web site is valid.
   if (!isNaN(key)) {
-    openLink(key);
+    openLink(key-1);
   }
  });
 
