@@ -4,13 +4,14 @@
  */
 
 
+
+ // Opens a link when user presses a number key when nothing is focused.
+ // (Links are not wanted to be opened when user writes e.g. a search query).
 document.addEventListener('keydown', function(event) {
   const key = event.key;
 
-  // Check if the pressed key is a number.
-  // If it is, then open the corresponding link if web site is valid.
-  if (!isNaN(key)) {
-    openLink(key-1);
+  if (!isNaN(key) && document.activeElement === document.body) {  // && !document.hasFocus()
+    openLink(key-1);        
   }
  });
 
