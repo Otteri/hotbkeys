@@ -10,7 +10,7 @@
 document.addEventListener('keydown', function(event) {
   const key = event.key;
 
-  if (!isNaN(key) && document.activeElement === document.body) {  // && !document.hasFocus()
+  if (!isNaN(key) && document.activeElement === document.body) {
     openLink(key-1);        
   }
  });
